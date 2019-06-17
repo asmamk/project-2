@@ -1,0 +1,25 @@
+<h1>Orders#new</h1>
+
+<p>Add your orders please :</p>
+<%= form_for @order do |f|%>
+<div class="field" >
+  <%= f.label :name %><br />
+   <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+ </div>
+
+ <div class="field">
+   <%= f.label :quntity %><br />
+   <%= f.number_field :quntity %>
+ </div>
+
+ <div class="field">
+   <%= f.label :table_number %><br />
+   <%= f.number_field :table_number  %>
+ </div>
+
+ <div class="actions">
+   <%= f.submit "Submit" %>
+ </div>
+<% end %> 
+
+

@@ -1,0 +1,11 @@
+<h1>Pages#home</h1>
+<% if user_signed_in? %>
+<h2>welcome 
+    <%= current_user.email%> to your page </h2>
+    <p>if you want to add your order please press on the   "add order"</p>
+<% end %>
+
+
+<h3>What is Lemonten coffee ?</h3>
+<p>Is a café that offers coffee, cold and hot drinks, fresh juices and fresh baked goods 
+at reasonable prices </p>
